@@ -185,7 +185,7 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 2.0,
+    XpMultiplier = 3.0,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = true,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
@@ -596,9 +596,9 @@ SandboxVars = {
         -- The day when the population reaches it's peak. Minimum=1 Maximum=365 Default=28
         PopulationPeakDay = 28,
         -- The number of hours that must pass before zombies may respawn in a cell. If zero, spawning is disabled. Minimum=0.00 Maximum=8760.00 Default=72.00
-        RespawnHours = 8760.0,
+        RespawnHours = 0.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
-        RespawnUnseenHours = 8760.0,
+        RespawnUnseenHours = 0.0,
         -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
         RespawnMultiplier = 0.1,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
@@ -629,7 +629,7 @@ SandboxVars = {
         BarrelCanPickupFull = false,
     },
     BLTAnnotations = {
-        DropMapOnDeath = true,
+        DropMapOnDeath = false,
     },
     SkillRecoveryJournal = {
         -- Minimum=1 Maximum=100 Default=100
@@ -651,7 +651,7 @@ SandboxVars = {
         Craftable = true,
     },
     Firearms = {
-        SuppressorBreak = false,
+        SuppressorBreak = true,
         ScrewdriverReq = false,
         BottleSuppressorBreakChance = 1,
         FlashlightSuppressorBreakChance = 2,
