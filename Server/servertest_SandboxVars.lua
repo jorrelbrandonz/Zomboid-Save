@@ -185,9 +185,9 @@ SandboxVars = {
     -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
     -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
-    XpMultiplier = 1.0,
+    XpMultiplier = 2.0,
     -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
-    XpMultiplierAffectsPassive = false,
+    XpMultiplierAffectsPassive = true,
     -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
     ZombieAttractionMultiplier = 1.0,
     -- Governs whether cars are locked, need keys to start etc.
@@ -212,7 +212,7 @@ SandboxVars = {
     -- 2 = Fast
     -- 3 = Normal
     -- 4 = Slow
-    StatsDecrease = 3,
+    StatsDecrease = 4,
     -- Controls the abundance of fish and general forage. Default=Normal
     -- 1 = Very Poor
     -- 2 = Poor
@@ -647,12 +647,12 @@ SandboxVars = {
         RecoverSurvivalistSkills = true,
         RecoverAgilitySkills = true,
         RecoverRecipes = true,
-        RecoveryJournalUsed = true,
+        RecoveryJournalUsed = false,
         Craftable = true,
     },
     Firearms = {
         SuppressorBreak = false,
-        ScrewdriverReq = true,
+        ScrewdriverReq = false,
         BottleSuppressorBreakChance = 1,
         FlashlightSuppressorBreakChance = 2,
         SuppressorEffectiveness22 = 3,
@@ -666,8 +666,8 @@ SandboxVars = {
         SuppressorEffectivenessImprovised = 9,
         SuppressorEffectivenessRevolver = 5,
         SpawnSuppressors = true,
-        SpawnHandgunSuppressors = false,
-        SpawnRifleSuppressors = false,
+        SpawnHandgunSuppressors = true,
+        SpawnRifleSuppressors = true,
         SpawnShotgunSuppressors = false,
         SpawnRevolverSuppressors = false,
         SpawnAmmoCans = true,
