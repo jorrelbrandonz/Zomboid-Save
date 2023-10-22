@@ -635,12 +635,12 @@ SandboxVars = {
         -- Minimum=1 Maximum=100 Default=100
         RecoveryPercentage = 100,
         -- Minimum=0.00 Maximum=1000.00 Default=1.00
-        TranscribeSpeed = 1000.0,
+        TranscribeSpeed = 1.0,
         -- Minimum=0.00 Maximum=1000.00 Default=1.00
-        ReadTimeSpeed = 1000.0,
-        RecoverProfessionAndTraitsBonuses = true,
-        TranscribeTVXP = true,
-        RecoverPassiveSkills = true,
+        ReadTimeSpeed = 1.0,
+        RecoverProfessionAndTraitsBonuses = false,
+        TranscribeTVXP = false,
+        RecoverPassiveSkills = false,
         RecoverCombatSkills = true,
         RecoverFirearmSkills = true,
         RecoverCraftingSkills = true,
@@ -677,5 +677,25 @@ SandboxVars = {
         -- 3 = Extremely Rare
         -- 4 = Rare
         LootSuppressor = 2,
+    },
+    BLTRandomZombies = {
+        -- Minimum=0.00 Maximum=100.00 Default=2.00
+        Crawler = 6.0,
+        -- Minimum=0.00 Maximum=100.00 Default=15.00
+        Shambler = 15.0,
+        -- Minimum=0.00 Maximum=100.00 Default=78.00
+        FastShambler = 78.0,
+        -- Minimum=0.00 Maximum=100.00 Default=5.00
+        Sprinter = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        Fragile = 0.0,
+        -- Minimum=0.00 Maximum=100.00 Default=100.00
+        NormalTough = 100.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        Tough = 0.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.00
+        Smart = 0.0,
+        -- Minimum=1000 Maximum=60000 Default=7500
+        Frequency = 7500,
     },
 }
